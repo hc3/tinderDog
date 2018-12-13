@@ -10,6 +10,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { APP_BASE_HREF } from '@angular/common';
 import { CoreModule } from './core/core.module';
 
+
 @NgModule({
   declarations: [AppComponent],
   imports: [
@@ -27,4 +28,6 @@ import { CoreModule } from './core/core.module';
     { provide: APP_BASE_HREF, useValue:'/'}
   ]
 })
+
 export class AppModule { }
+

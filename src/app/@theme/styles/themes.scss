@@ -64,6 +64,12 @@ $nb-themes: nb-register-theme((
   ecommerce-card-border-width: 1px,
 
   progress-bar-background: linear-gradient(90deg, #00c7c7 0%, #00d977 100%),
+
+  color-bg: red, // cor de fundo do header, menu e footer.
+  color-white:yellow, // dar da fonte do header, menu ( apenas cabeçalho ).
+  layout-bg: white, // cor do fundo do content
+
+
 ), cosmic, cosmic);
 
 $nb-themes: nb-register-theme((
