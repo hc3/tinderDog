@@ -15,7 +15,7 @@ const PAGES_COMPONENTS = [
     CommonModule,
     PagesRoutingModule,
     ThemeModule,
-    HomeModule
+    HomeModule,
   ],
   declarations: [
     ...PAGES_COMPONENTS

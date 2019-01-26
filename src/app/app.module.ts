@@ -9,18 +9,30 @@ import { ThemeModule } from './@theme/theme.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { APP_BASE_HREF } from '@angular/common';
 import { CoreModule } from './core/core.module';
+import { NgxLoadingModule } from 'ngx-loading';
+
+import { FIREBASE_CONFIG } from '../environments/environment';
+import { AngularFireModule } from '@angular/fire';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { AngularFireAuthModule } from '@angular/fire/auth';
+
+import { LoginComponent } from './pages/login/login.component';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, LoginComponent],
   imports: [
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    AngularFireModule.initializeApp(FIREBASE_CONFIG),
+    AngularFirestoreModule,
+    AngularFireAuthModule,
 
     NgbModule.forRoot(),
     ThemeModule.forRoot(),
-    CoreModule.forRoot()
+    CoreModule.forRoot(),
+    NgxLoadingModule.forRoot({})
   ],
   bootstrap: [AppComponent],
   providers: [

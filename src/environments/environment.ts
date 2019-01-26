@@ -6,6 +6,15 @@ export const environment = {
   production: false
 };
 
+export const FIREBASE_CONFIG = {
+  apiKey: "AIzaSyBs_hCaz2ASchYF7mhuVEybt6gDXPH-Gmc",
+  authDomain: "dogindb.firebaseapp.com",
+  databaseURL: "https://dogindb.firebaseio.com",
+  projectId: "dogindb",
+  storageBucket: "dogindb.appspot.com",
+  messagingSenderId: "486075167829"
+};
+
 /*
  * For easier debugging in development mode, you can import the following file
  * to ignore zone related error stack frames such as `zone.run`, `zoneDelegate.invokeTask`.
@@ -14,3 +23,5 @@ export const environment = {
  * on performance if an error is thrown.
  */
 // import 'zone.js/dist/zone-error';  // Included with Angular CLI.
+
+ 

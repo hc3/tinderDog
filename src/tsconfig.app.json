@@ -6,11 +6,14 @@
     "baseUrl": "./",
     "types": [],
     "paths": {
-      "@angular/*":[
+      "@angular/*": [
         "../node_modules/@angular/*"
       ],
-      "@nebular/*":[
+      "@nebular/*": [
         "../node_modules/@nebular/*"
+      ],
+      "@core/*": [
+        "app/core/*"
       ]
     }
   },

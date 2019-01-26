@@ -3,10 +3,12 @@ import { CommonModule } from '@angular/common';
 import { throwIfAlreadyLoaded } from './module-import-guard';
 import { ModuleWithProviders } from '@angular/compiler/src/core';
 import { DataModule } from './data/data.module';
+import { AuthModule } from './auth/auth.module';
 
 
 export const NB_CORE_PROVIDERS = [
-  ...DataModule.forRoot().providers
+  ...DataModule.forRoot().providers,
+  ...AuthModule.forRoot().providers
 ]
 
 
